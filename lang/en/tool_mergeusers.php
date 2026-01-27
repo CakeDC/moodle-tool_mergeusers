@@ -27,6 +27,10 @@
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
+$string['apibulkpartialsuccess'] = 'Some merges completed successfully';
+$string['apimergefailed'] = 'User merge failed';
+$string['apimergesuccess'] = 'Users merged successfully';
+$string['cannotfinduser'] = 'Cannot find the user with {$a->userfield} {$a->uservalue}.';
 $string['choose_users'] = 'Choose users to merge';
 $string['clear_selection'] = 'Clear current user selection';
 $string['cligathering:description'] = "Introduce pairs of user's id to merge the first one into the\nsecond one. The first user id (fromid) will 'lose' all its data to be 'migrated'\ninto the second one (toid). The user 'toid' will include data from both users.";
@@ -116,6 +120,7 @@ $string['tableok'] = 'Table {$a} : update OK';
 $string['tableskipped'] = 'For logging or security reasons we are skipping <strong>{$a}</strong>. <br />To remove these entries, delete the old user once this script has run successfully.';
 $string['timetaken'] = 'Merge took {$a} seconds';
 $string['tomedetail'] = 'From {$a->profilelink} into this account with {$a->success} on {$a->time}. {$a->loglink}';
+$string['toomanyusers'] = 'More than one user found with {$a->userfield} {$a->uservalue}.';
 $string['transactions_not_supported'] = 'For your information, your database <strong>does not supports transactions</strong>.';
 $string['transactions_setting'] = 'Only transactions allowed';
 $string['transactions_setting_desc'] = 'If enabled, merge users will not work at all on databases that do NOT support transactions (recommended). Enabling it is necessary to ensure that your database remains consistent in case of merge errors. <br />If disabled, you will always run merge actions. In case of errors, the merge log will show you what was the problem. Reporting it to the plugin supporters will give you a solution in short.<br />Above all, core Moodle tables and some third party plugins are already considered by this plugin. If you do not have any third party plugins in your Moodle installation, you can be quiet on running this plugin enabling or disabling this option.';

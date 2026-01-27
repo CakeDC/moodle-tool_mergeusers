@@ -1,5 +1,13 @@
 # Release notes
 
+## 2026012700
+
+1. 2026-01-27: feature: #42232: Add web service API endpoints for user merge.
+   1. Added `tool_mergeusers_merge_users` endpoint for single user merge operations.
+   2. Added `tool_mergeusers_merge_users_bulk` endpoint for bulk user merge operations.
+   3. Both endpoints support immediate synchronous processing.
+   4. API calls are logged to existing tool_mergeusers table.
+
 ## 2025102100
 
 1. 2025-10-21: bug: #379: remove table lines for >= Moodle 5.0 and Bootstrap 5.0. Thanks @lucaboesch.
