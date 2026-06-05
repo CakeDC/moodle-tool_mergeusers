@@ -30,9 +30,9 @@
 
 defined('MOODLE_INTERNAL') || die;
 
-$plugin->version = 2026012701;
+$plugin->version = 2026050500;
 $plugin->release = '(API endpoints for user merge)';
 $plugin->requires = 2024100700; // Moodle 4.5+, https://moodledev.io/general/releases#moodle-45-lts.
 $plugin->component = 'tool_mergeusers';
 $plugin->maturity = MATURITY_STABLE;
-$plugin->supported = [405, 501];
+$plugin->supported = [405, 502];
